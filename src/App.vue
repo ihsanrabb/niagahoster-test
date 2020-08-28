@@ -3,26 +3,26 @@
     <div class="container-fluid">
       <section>
         <div class="row" style="padding: 1rem 1rem .5rem 1rem">
-          <div class="mb-2 col-md-8">
+          <div class="mb-2 col-md-7">
             <img src="@/assets/img/ribbon.png" />
             Gratis Ebook 9 Cara Cerdas Menggunakan Domain[x]
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5 header-nav">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
             </svg>
-            <span class="ml-1 mr-3">0274-5305505</span>
+            <span>0274-5305505</span>
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
             </svg>
-            <span class="ml-1 mr-3">Live Chat</span>
+            <span>Live Chat</span>
             <br class="break-sm-icon">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
               <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
               <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
             </svg>
-            <span class="ml-1 mr-3">Member Area</span>
+            <span>Member Area</span>
           </div>
         </div>
         <hr class="mb-0 mt-0">
@@ -717,6 +717,20 @@ export default {
 @font-face {
   font-family: 'Roboto Bold';
   src: url('~@/assets/fonts/roboto/Roboto-Bold.ttf') format("truetype");
+}
+
+.header-nav {
+  span {
+    margin-left: .75rem;
+    margin-right: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      margin-top: .25rem;
+    }
+  }
 }
 
 .title-bold {
